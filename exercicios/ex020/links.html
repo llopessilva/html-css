@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Links</title>
+    <style>
+      /*  SELETORES PERSONALIZADOS
+          #   = id
+          .   = class
+          :   = pseudo-class
+          ::  = pseudo-element
+          >   = children
+      */
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      a {
+        color: red;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      a:visited {
+        /* Para links visitados */
+        color: darkred;
+      }
+
+      a:hover {
+        /* Quando passar o mouse emcima*/
+        color: black;
+        text-decoration: underline;
+      }
+
+      a:active {
+        /* Para link ativado*/
+        color: yellow;
+      }
+
+      .especial {
+        background-color: rgb(230, 171, 171);
+      }
+
+      .especial::before {
+        content: ' ⇐ ';
+      }
+      .especial::after {
+        content: ' ⇒ ';
+        text-decoration: none;
+        font-weight: normal;
+        color: darkgrey;
+      }
+
+  
+      .btn-1 {
+        background-color: white;
+        color: red;
+        border: 2px solid red;
+        border-radius: 25px;
+        padding: 10px 30px;
+        font-weight: bold;
+      }
+
+      .btn-1:hover {
+        background-color: red;
+        color: white;
+        cursor: pointer;
+      }
+
+      .btn-2 {
+        background-color: red;
+        border: 2px solid red;
+        border-radius: 25px;
+        padding: 10px 30px;
+        font-weight: bold;
+        color: white;
+        margin-left: 10px
+      }
+
+      .btn-2:hover {
+        background-color: white;
+        color: red;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Personalizando Links</h1>
+    <ul>
+      <li>
+        <a href="https://gustavoguanabara.github.io" target="_blank"
+          >Repositório Github</a
+        >
+      </li>
+      <li>
+        <a
+          class="especial"
+          href="https://youtube.com/cursoemvideo"
+          target="_blank"
+          >Canal do Youtube</a
+        >
+      </li>
+      <li>
+        <a class="especial" href="https://www.cursoemvideo.com" target="_blank"
+          >Site do CursoemVideo</a
+        >
+      </li>
+    </ul>
+
+    <div class="btn">
+      <button class="btn-1">Ligar</button>
+      <button class="btn-2">Desligar</button>
+    </div>
+  </body>
+</html>

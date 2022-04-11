@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ot-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imagem Flexível</title>
+  </head>
+  <body>
+    <h1>Imagem Flexível</h1>
+    <p>Imagem fexível com tamanhos para todo tipo de dispostivo</p>
+    <picture>
+      <source
+        media="(max-width: 370px)"
+        srcset="imagens/imagem-pp.jpg"
+        type="image/jpg"
+      />
+      <source
+        media="(max-width: 690px)"
+        srcset="imagens/imagem-p.jpg"
+        type="image/jpg"
+      />
+      <source
+        media="(max-width: 1320px)"
+        srcset="imagens/imagem-m.jpg"
+        type="image/jpg"
+      />
+      <img src="imagens/imagem-g.jpg" alt="Imagem Flexível" />
+    </picture>
+  </body>
+</html>
