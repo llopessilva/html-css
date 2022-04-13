@@ -1,0 +1,16 @@
+.borda {
+  border: 1px solid red;
+}
+.container {
+  background-color: grey;
+  padding:10px;
+  justify-content: space-around;
+  
+}
+.box {
+  background-color: blue;
+  width: 150px;
+  height: 150px;
+  border: 2px solid black;
+  display: inline-block;
+}

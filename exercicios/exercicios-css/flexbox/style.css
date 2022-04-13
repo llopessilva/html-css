@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: yellowgreen;
+  padding: 80px;
+  text-align: center;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  background-color: grey;
+  color: black;
+}
+
+.card {
+  flex: 48%;
+  background-color: lightgray;
+  height: 400px;
+  margin: 1%;
+}
+
+.corpo {
+  display: flex;
+  flex-flow: row wrap;
+  
+}
+
+@media screen and (max-width:700px) {
+  .navbar {
+    flex-direction: column;
+  }
+}
+
